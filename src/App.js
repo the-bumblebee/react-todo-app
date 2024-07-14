@@ -1,5 +1,5 @@
-import './App.css';
-import TodoRowItem from './components/TodoRowItem';
+import './App.css'
+import TodoTable from './components/TodoTable'
 
 function App() {
 
@@ -7,6 +7,7 @@ function App() {
     { rowNumber: 1, rowDescription: 'Feed cat', rowAssigned: 'User One' },
     { rowNumber: 2, rowDescription: 'Water plants', rowAssigned: 'User Two' },
     { rowNumber: 3, rowDescription: 'Make dinner', rowAssigned: 'User One' },
+    { rowNumber: 4, rowDescription: 'Charge phone', rowAssigned: 'User One' },
   ]
   return (
     <div className='mt-5 container'>
@@ -15,32 +16,7 @@ function App() {
           Your Todo's
         </div>
         <div className='card-body'>
-          <table className='table table-hover'>
-            <thead>
-              <tr>
-                <th scope='col'>#</th>
-                <th scope='col'>Description</th>
-                <th scope='col'>Assigned</th>
-              </tr>
-            </thead>
-            <tbody>
-              <TodoRowItem
-                rowNumber={todos[0].rowNumber}
-                rowDescription={todos[0].rowDescription}
-                rowAssigned={todos[0].rowAssigned}
-              />
-              <TodoRowItem
-                rowNumber={todos[1].rowNumber}
-                rowDescription={todos[1].rowDescription}
-                rowAssigned={todos[1].rowAssigned}
-              />
-              <TodoRowItem
-                rowNumber={todos[2].rowNumber}
-                rowDescription={todos[2].rowDescription}
-                rowAssigned={todos[2].rowAssigned}
-              />
-            </tbody>
-          </table>
+          <TodoTable todos={todos} />
         </div>
       </div>
     </div>
