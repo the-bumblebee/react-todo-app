@@ -1,4 +1,4 @@
-import TodoRowItem from "./TodoRowItem"
+import TodoRowItem from "./TodoRowItem";
 
 function TodoTable(props) {
   return (
@@ -20,7 +20,7 @@ function TodoTable(props) {
         ))}
       </tbody>
     </table>
-  )
+  );
 }
 
-export default TodoTable
+export default TodoTable;

@@ -5,7 +5,7 @@ function TodoRowItem(props) {
       <td>{props.rowDescription}</td>
       <td>{props.rowAssigned}</td>
     </tr>
-  )
+  );
 }
 
-export default TodoRowItem
+export default TodoRowItem;
